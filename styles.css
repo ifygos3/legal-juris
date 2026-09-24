@@ -312,6 +312,7 @@
     width:100%;
     margin:0 auto;
     isolation:isolate;
+    overflow:hidden;
   }
 
   /* Gold arch outline behind the portrait */
