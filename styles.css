@@ -100,10 +100,10 @@
   .brand{ display:flex; align-items:center; gap:12px; line-height:1.1; }
   .brand-text{ display:flex; flex-direction:column; }
   .brand-logo-slot{
-    width:44px; height:44px; flex:none; border:1.5px dashed rgba(201,162,39,.6); border-radius:6px;
-    display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,.04);
+    width:44px; height:44px; flex:none; border:1.5px solid rgba(201,162,39,.5); border-radius:6px;
+    display:grid; place-items:center; background:rgba(255,255,255,.04); overflow:hidden;
   }
-  .brand-logo-slot svg{ width:20px; height:20px; color:var(--gold); opacity:.85; }
+  .brand-logo-slot img{ width:100%; height:100%; object-fit:contain; display:block; }
   .brand .name{ font-family:var(--serif); font-weight:700; font-size:1.5rem; color:var(--white); letter-spacing:.01em; }
   .brand .sub{ font-size:.72rem; color:var(--gold); margin-top:2px; font-weight:500; }
 
@@ -572,10 +572,9 @@
 
   .footer-logo-slot{
     width:46px; height:46px; display:grid; place-items:center; margin-bottom:18px;
-    border:1px solid rgba(201,162,39,.45); border-radius:var(--radius); color:var(--gold);
+    border:1px solid rgba(201,162,39,.45); border-radius:var(--radius); overflow:hidden;
   }
-  .footer-logo-slot svg{ width:24px; height:24px; }
-  .footer-logo-slot img{ width:100%; height:100%; object-fit:contain; }
+  .footer-logo-slot img{ width:100%; height:100%; object-fit:contain; display:block; }
   .f-brand .fname{ font-family:var(--serif); color:var(--white); font-size:1.5rem; font-weight:700; line-height:1.1; }
   .f-brand .fsub{ color:var(--gold); font-size:.8rem; font-weight:500; margin-top:4px; }
   .f-brand .est{ margin-top:16px; color:rgba(255,255,255,.66); max-width:34ch; }
